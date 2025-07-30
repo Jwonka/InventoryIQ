@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>Inventory Items</h1>
+<nav>
+    <ul>
+        <li><a th:href="@{/home}">Home</a></li>
+        <li><a class="active" th:href="@{/items}">Items</a></li>
+        <li><a th:href="@{/products}">Products</a></li>
+        <li><a th:href="@{/components}">Components</a></li>
+    </ul>
+</nav>
+<a th:href="@{/items/new}">New Item</a>
+<table>
+    <tr><th>SKU</th><th>Name</th><th>Qty</th></tr>
+    <tr th:each="item : ${items}">
+        <td th:text="${item.sku}"></td>
+        <td th:text="${item.name}"></td>
+        <td th:text="${item.quantity}"></td>
+    </tr>
+</table>
+</body>
+</html>

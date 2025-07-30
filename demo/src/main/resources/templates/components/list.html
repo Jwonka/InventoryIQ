@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>Components</h1>
+<nav>
+    <ul>
+        <li><a th:href="@{/home}">Home</a></li>
+        <li><a th:href="@{/items}">Items</a></li>
+        <li><a th:href="@{/products}">Products</a></li>
+        <li><a class="active" th:href="@{/components}">Components</a></li>
+    </ul>
+</nav>
+<a th:href="@{/components/new}">+ New Component</a>
+<table>
+    <thead>
+    <tr><th>Code</th><th>Name</th><th>Actions</th></tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</body>
+</html>

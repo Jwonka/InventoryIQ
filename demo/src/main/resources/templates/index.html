@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" th:href="@{/home}">Home</a></li>
+            <li><a th:href="@{/items}">Items</a></li>
+            <li><a th:href="@{/products}">Products</a></li>
+            <li><a th:href="@{/components}">Components</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to InventoryIQ</h1>
+    <p><a th:href="@{/items}">Manage Items</a> | <a th:href="@{/products}">Manage Products</a></p>
+</body>
+</html>

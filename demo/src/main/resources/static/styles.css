@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #000;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #BBDEFB;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    margin: clamp(2rem, 5vh, 4rem) 1rem 1.25rem;
+    text-align: center;
+    font-size: clamp(1.5rem, 3.7vw, 3.7rem);
+}
+
+h2 {
+    text-align: center;
+    font-size: clamp(1.25rem, 2.5vw, 3.5rem);
+    margin: 1.25rem;
+}
+
+.listHeadline {
+    text-align: center;
+    font-size: clamp(1.2rem, 2.3vw, 2.5rem);
+    margin: 1rem;
+}
+
+p {
+    font-size: clamp(1.1rem, 2.2vw, 2rem);
+    line-height: 1.25;
+    width: 95%;
+    padding-inline: 0.25rem;
+}
+
+ul {
+    list-style: disc inside;
+    text-align: left;
+    width: 95%;
+    margin: 1rem auto;
+    padding: 0 0 1rem 0.5rem;
+}
+
+p, ul {
+    max-width: none;
+    margin-inline: auto;
+}
+
+ul li {
+    margin: 0.65rem 0;
+    font-size: clamp(0.9rem, 2vw, 1.8rem);
+    padding-inline: 0.2rem;
+}
+
+li {
+    word-break: keep-all;
+    white-space: break-spaces;
+}
+
+a {
+    color: #008000;
+    text-decoration: none;
+}
+
+a.active {
+    text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}

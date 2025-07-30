@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>Products</h1>
+<nav>
+    <ul>
+        <li><a th:href="@{/home}">Home</a></li>
+        <li><a th:href="@{/items}">Items</a></li>
+        <li><a class="active" th:href="@{/products}">Products</a></li>
+        <li><a th:href="@{/components}">Components</a></li>
+    </ul>
+</nav>
+<a th:href="@{/products/new}">+ New Product</a>
+<table>
+    <thead>
+    <tr><th>Code</th><th>Name</th><th>Actions</th></tr>
+    </thead>
+    <tbody>
+    <tr th:each="prod : ${products}">
+        <td th:text="${prod.code}"></td>
+        <td th:text="${prod.name}"></td>
+        <td>
+            <a th:href="@{|/products/${prod.id}/edit|}">Edit</a> |
+            <a th:href="@{|/products/${prod.id}/components|}">Components</a> |
+            <form th:action="@{|/products/${prod.id}/delete|}" method="post" style="display:inline">
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
