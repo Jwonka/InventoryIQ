@@ -1,0 +1,31 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# — Maven build artifacts —
+/target/
+/*.jar
+
+# — IntelliJ IDEA —
+.idea/
+/*.iml
+
+# — Eclipse (if ever) —
+.project
+.classpath
+.settings/
+
+# — OS files —
+.DS_Store
+Thumbs.db
+
+# — Logs and temporary files —
+*.log
+*.tmp
